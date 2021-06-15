@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9D9ACA"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="215dp"
+        android:layout_height="157dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233"
+        app:srcCompat="@drawable/lorenz_factor2" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="146dp"
+        android:layout_height="47dp"
+        android:background="#A53737"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="CALCULATE"
+        android:textColor="#090909"
+        android:textSize="16sp"
+        app:backgroundTint="#687DED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <EditText
+        android:id="@+id/velocityValue"
+        android:layout_width="167dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:background="#687DED"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center|center_vertical"
+        android:hint="Enter velocity"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457"
+        tools:text="55" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="167dp"
+        android:layout_height="45dp"
+        android:background="#687DED"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center|center_vertical"
+        android:hint="γ value"
+        android:textColor="#050505"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457"
+        tools:text="γ will be displayed here" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
